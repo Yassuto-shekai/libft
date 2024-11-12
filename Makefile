@@ -23,7 +23,7 @@ $(NAME): $(OBJ)
 
 bonus: $(OBJB)
 	ar rcs $(NAME) $(OBJB)
-	touch bonus
+	@touch bonus
 
 %.c : %.o
 	cc $(CFLAGS) -c $< -o $@
